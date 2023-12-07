@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="title-bar">
+        <div class="options">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </div>
+        <a href="/">
+            <img src="{{ url_for('static', filename='copycheck_logo.png') }}" alt="CopyCheck Logo">
+        </a>
+    </div>
+    <div class="content">
+        <h1>About US</h1>
+        <p>
+            CopyCheck is a web application designed to help you analyze text content for potential duplicate or copied
+            information. Simply upload a .txt or .docx file, and CopyCheck will process the text and provide you with
+            feedback regarding potential copied content.
+        </p>
+        <p>
+            Our goal is to assist users in identifying and addressing instances of duplicate content, promoting
+            originality and integrity in written work.
+        </p>
+        <p>
+            CopyCheck is powered by advanced algorithms that analyze the structure and patterns of text to identify
+            similarities. However, it's important to note that the tool is not foolproof and may require human
+            judgment for accurate assessment.
+        </p>
+        <p>
+            Thank you for using CopyCheck!
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
